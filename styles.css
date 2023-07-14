@@ -109,9 +109,85 @@ body {
 
 /*----------------- collection-characters grid -------*/
 
-.card-collection-characters-grid {
+.collection-characters-grid {
+    display: grid;
+    grid-template-columns: 14.5rem;
     border: 1px solid #ffff;
 }
 
+
+/*----------------- collection-characters grid card -------*/
+.card-collection-characters-grid {
+    border: 1px dotted #b7a1e7;
+}
+
+.card-collection-characters-grid-img {
+    background-image: url('./imgs/7.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 17rem;
+}
+
+.card-collection-characters-grid-description {
+    padding: .1rem 1.5rem;
+    position: relative;
+    margin-top: -4rem;
+}
+
+.card-collection-characters-grid-description-title {
+    border-left: 5px solid #ffff;
+    padding: .5rem 1rem;
+}
+
+.card-collection-characters-grid-description-title span {
+    display: block;
+}
+
+.card-collection-characters-grid-description-name {
+    color: #FFFF;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.card-collection-characters-grid-description-title-team {
+    color: #FFFF;
+    font-weight: 800;
+    font-size: 10px;
+}
+
+.card-collection-characters-grid-description-time {
+    display: flex;
+    justify-content: space-between;
+    color: #ffff;
+    font-size: 10px;
+    font-weight: 600;
+    margin: .5rem 0;
+    padding: 0 5px;
+    
+}
+
+.card-collection-characters-grid-description-time-one {
+    justify-content: left;
+}
+
+.card-collection-characters-grid-description-time-two {
+    justify-content: right;
+}
+
+
+
+/*----------------- collection-characters grid card character costomize -------*/
+
+.one-character {
+    background-image: linear-gradient(to bottom, rgba(194, 94, 1, 0.25) 0%, #c25e01 66.15%);
+}
+
+.one-character .card-collection-characters-grid-description-title {
+    border-left: 5px solid #ffb800;
+}
+
+.one-character div .card-collection-characters-grid-description-title-team {
+    color: #ffee57;
+}
 
 
