@@ -111,8 +111,9 @@ body {
 
 .collection-characters-grid {
     display: grid;
-    grid-template-columns: 14.5rem;
-    
+    grid-template-columns: repeat(6, 14.5rem);
+    column-gap: 1.5rem;
+    margin-top: 2rem;
 }
 
 
@@ -123,7 +124,6 @@ body {
 }
 
 .card-collection-characters-grid-img {
-    background-image: url('./imgs/1.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 17rem;
@@ -219,6 +219,21 @@ body {
     color: #ffee57;
 }
 
+.one-img {
+    background-image: url('./imgs/1.png');
+}
+
+.two-img {
+    background-image: url('./imgs/2.png');
+}
+
+.three-img {
+    background-image: url('./imgs/3.png');
+}
+
+.four-img {
+    background-image: url('./imgs/4.png');
+}
 /*-----------------collection-characters grid card character scores -----------------*/
 
 .card-collection-characters-grid-footer {
