@@ -4,14 +4,17 @@ body {
 }
 
 .body {
-    margin: 0 20rem;
+    margin: 0 20rem 0 20rem;
 }
 
 .score {
+    display: grid;
+    grid-template-rows: 2.3rem;
     background-color: #2b1260;
     border: 1px solid #382a62;
     border-radius: 5px;
     height: 12rem;
+    width: 100%;
 }
 
 /*------------menú score------------*/
@@ -40,13 +43,17 @@ body {
 /*------------ number score------------*/
 .body-number {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    justify-self: center;
+    align-self: center;
+    padding: 2rem;
     height: 70%;
+    width: auto;
 }
 
 .title-body-number {
     color: #b7a1e7;
-    font-size: 15px;
+    font-size: 100%;
     font-weight: 1000;
 }
 
@@ -57,16 +64,18 @@ body {
 }
 
 .total-body-number, .body-number-transactions, .body-number-items {
-    flex: 1;
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20rem;
+    width: 18%;
 }
 
 .title-body-number-description {
     margin-left: 1rem;
 }
+
+
 
 /*----------------- collection-characters -------*/
 
@@ -111,7 +120,9 @@ body {
 
 .collection-characters-grid {
     display: grid;
-    grid-template-columns: repeat(6, 14.5rem);
+    justify-content: center;
+    grid-template-columns: repeat(5, 18%);
+    grid-template-rows: repeat(infinite, 30%);
     column-gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -211,6 +222,14 @@ body {
     background-image: linear-gradient(to bottom, rgba(194, 94, 1, 0.25) 0%, #c25e01 66.15%);
 }
 
+.two-character {
+    background-image: linear-gradient(to bottom, rgba(110, 4, 215, 0.25) 0%, #45008a 66.15%);
+}
+
+.three-character {
+    background-image: linear-gradient(to bottom, rgba(0, 45, 206, 0.46) 0%, #0127aa 66.15%);
+}
+
 .one-character .card-collection-characters-grid-description-title {
     border-left: 5px solid #ffb800;
 }
@@ -233,6 +252,30 @@ body {
 
 .four-img {
     background-image: url('./imgs/4.png');
+}
+
+.five-img {
+    background-image: url('./imgs/5.png');
+}
+
+.six-img {
+    background-image: url('./imgs/6.png');
+}
+
+.seven-img {
+    background-image: url('./imgs/7.png');
+}
+
+.eight-img {
+    background-image: url('./imgs/8.png');
+}
+
+.nine-img {
+    background-image: url('./imgs/9.png');
+}
+
+.ten-img {
+    background-image: url('./imgs/10.png');
 }
 /*-----------------collection-characters grid card character scores -----------------*/
 
